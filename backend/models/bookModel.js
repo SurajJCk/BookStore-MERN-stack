@@ -19,4 +19,4 @@ const bookSchema = mongoose.Schema(
   }
 );
 
-export const Book = mongoose.model("Copy", { bookSchema });
+export const Book = mongoose.model("Book", bookSchema);
