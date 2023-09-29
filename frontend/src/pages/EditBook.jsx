@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import BackButton from "../../components/BackButton";
-import Spinner from "../../components/Spinner";
+import BackButton from "../components/BackButton";
+import Spinner from "../components/Spinner";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import { useSnackbar } from "notistack";
@@ -26,7 +26,7 @@ const EditBook = () => {
       })
       .catch((error) => {
         setLoading(false);
-        alert("An error happened. Please Chack console");
+        alert("An error happened. Please Check console");
         console.log(error);
       });
   }, []);
